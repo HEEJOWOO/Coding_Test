@@ -13,7 +13,7 @@ array.sort(reverse=True) #내림차순 정렬
 result = 0
 count = int(m / (k+1))*k # 순열 횟수 구하기, 큰 수 더해주기 
 count += m%(k+1) # 주어진 m번 더하는 횟수에서 순열 횟수로 나눠진 나머지 만큼 큰 수 더해주기
-result +=count*array[0]
+result +=count*array[0] # 첫 번째 큰 수 더해주기 
 result +=(m-count)*array[1] # 두 번째 큰 수 더해주기 
 
 print(result)
